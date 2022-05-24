@@ -11,3 +11,28 @@
     height: 70px;
     object-fit: contain;
 }
+
+
+.button-card{
+    background-color: bisque;
+    box-shadow: 2px, 2px, 3px, black;
+    border-radius: 8%
+}
+
+
+.vendable-card{
+    background-color: rgb(195, 241, 255);
+    box-shadow: 2px, 2px, 3px, black;
+    border-radius: 8%
+    
+}
+
+.vendable-card:hover{
+    transform: scale(1.03);
+}
+
+.inventory-card{
+    background-color: rgb(195, 241, 255);
+    box-shadow: 2px, 2px, 3px, black;
+    border-radius: 8%
+}

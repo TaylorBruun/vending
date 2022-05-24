@@ -17,7 +17,7 @@ function _drawInventory(){
     let template = '<h5>Inventory:</h5>'
     ProxyState.purchasedSnacks.forEach(s => {
         template +=
-        `<img class="img-fluid p-1 inventory-snack" src="/assets/img/${s.name}.jpg" alt="">`
+        `<img class="inventory-card img-fluid p-1 inventory-snack" src="/assets/img/${s.name}.jpg" alt="">`
     });
     document.getElementById('inventory').innerHTML = template
 }
