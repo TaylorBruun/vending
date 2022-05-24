@@ -10,7 +10,7 @@
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/style.css">
-  <title>vending</title>
+  <title>Vending</title>
 </head>
 
 <body>
@@ -19,19 +19,55 @@
       <a class="navbar-brand ms-3" href="#">
         <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
           loading="lazy">
-        <span class="ms-2">vending</span>
+        <span class="ms-2">Vending</span>
       </a>
     </nav>
   </header>
+
   <main>
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
           <div id="app"></div>
+          <button onclick="app.snacksController.addCurrency()" class="btn btn-secondary p-2 m-1">25¢</button>
+          <div id="current">Total: $0.00</div>
+
+        </div>
+      </div>
+      <div id="vendables" class="row container-fluid d-flex align-items-baseline">
+        
+          <div class="col-3">
+            <img onclick="app.snacksController.buySnack(0)" class="img-fluid vendable-snack" src="/assets/img/pineapple.jpg" alt="">
+            <h6>Pineapple - PRICE</h6>
+
+          </div>
+          <div class="col-3">
+            <img onclick="app.snacksController.buySnack(1)" class="img-fluid vendable-snack" src="/assets/img/banana.jpg" alt="">
+            <h6>Single Banana - PRICE</h6>
+
+          </div>
+          <div class="col-3">
+
+            <img onclick="app.snacksController.buySnack(2)" class="img-fluid vendable-snack" src="/assets/img/lemon.jpg" alt="">
+            <h6>Lemon - PRICE</h6>
+          </div>
+          <div class="col-3">
+
+            <img onclick="app.snacksController.buySnack(3)" class="img-fluid vendable-snack" src="/assets/img/bananas.jpg" alt="">
+            <h6>Bunch of Bananas with one Missing - PRICE</h6>
+          </div>
+        
+      </div>
+      <div class="row">
+        <div id="inventory" class="col mt-5 border-top border-dark">
+            
+            
+
         </div>
       </div>
     </div>
   </main>
+
   <footer class="bg-dark text-light">
     <div class="text-center no-select">
       <p><small>Made with 💖 by Codeworks</small></p>
